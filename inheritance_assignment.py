@@ -1,24 +1,21 @@
+# creates a class
+def __init__(animal, name, owner, species, age): #initializes the attributes of class
+        animal.name = name
+        animal.owner = owner
+        animal.species = species
+        animal.age = age
+        New_animal = Animal("Goose", "Shannon","Cat", 5)
 
-# creates parent class
-class Student:
-    def __init__(self, name, age, grade):
-        self.age = age
-        self.grade = grade
+    # creates classes with arguments
+class Animal: # creates class Animal
+    name = 'Goose'
+    owner = 'Shannon'
+    species = 'cat'
+    age = 5
+class Diet(Animal): # creates class diet that refers to class Animal
+        morning_food = '1/3 can dry food'
+        evening_food = '1/2 cup wet food'
+class Exercise(Animal): # creates class exercise that refers to class Animal
+        morning_exercise = 'Play with banana kick toy'
+        evening_exercise = 'Chase around house'
 
-#creates child class, inherits attributes from parent class
-class Student1(Student):
-    def __init__(self,name,age,grade):
-        self.name = name
-        self.age = age
-        self.grade = grade
-
-#creates child class, inherits attributes from parent class
-class Student2(Student):
-    def __init__(self,name,age,grade):
-        self.name = name
-        self.age = age
-        self.grade = grade
-
-#adds attributes to Student class
-student1 = Student('Ann',15,10)
-student2 = Student('Ben',17,12)
